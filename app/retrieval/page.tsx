@@ -54,8 +54,9 @@ export default function AgentsPage() {
         <li>
           🐶
           <span className="ml-2">
-            By default, the agent is pretending to be a talking puppy, but you
-            can change the prompt to whatever you want!
+            By default, this retrieval agent is configured as Crockett's
+            Public House (Puyallup) customer-service assistant. You can
+            change the prompt to whatever you want!
           </span>
         </li>
         <li className="text-l">
@@ -88,9 +89,9 @@ export default function AgentsPage() {
       emptyStateComponent={InfoCard}
       showIngestForm={true}
       placeholder={
-        'I\'ve got a nose for finding the right documents! Ask, "What is a document loader?"'
+        'Ask about Crockett\'s Public House hours, happy hour, or menu highlights.'
       }
-      emoji="🐶"
+      emoji="🍽️"
     />
   );
 }

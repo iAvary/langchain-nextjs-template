@@ -33,8 +33,9 @@ export default function Home() {
         <li>
           🏴‍☠️
           <span className="ml-2">
-            By default, the bot is pretending to be a pirate, but you can change
-            the prompt to whatever you want!
+            By default, the bot is a friendly Crockett's Public House (Puyallup)
+            customer-service assistant. You can change the prompt to whatever
+            you want!
           </span>
         </li>
         <li className="hidden text-l md:block">
@@ -46,7 +47,7 @@ export default function Home() {
         <li className="text-l">
           👇
           <span className="ml-2">
-            Try asking e.g. <code>What is it like to be a pirate?</code> below!
+            Try asking e.g. <code>What time is happy hour?</code> below!
           </span>
         </li>
       </ul>
@@ -55,8 +56,8 @@ export default function Home() {
   return (
     <ChatWindow
       endpoint="api/chat"
-      emoji="🏴‍☠️"
-      placeholder="I'm an LLM pretending to be a pirate! Ask me about the pirate life!"
+      emoji="🍻"
+      placeholder="Ask about Crockett's Public House hours, happy hour, or menu highlights."
       emptyStateComponent={InfoCard}
     />
   );

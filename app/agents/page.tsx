@@ -39,8 +39,9 @@ export default function AgentsPage() {
         <li>
           🦜
           <span className="ml-2">
-            By default, the agent is pretending to be a talking parrot, but you
-            can the prompt to whatever you want!
+            By default, the agent is configured as Crockett's Public House
+            (Puyallup) customer-service assistant. You can change the prompt
+            to whatever you want!
           </span>
         </li>
         <li className="hidden text-l md:block">
@@ -64,8 +65,8 @@ export default function AgentsPage() {
     <ChatWindow
       endpoint="api/chat/agents"
       emptyStateComponent={InfoCard}
-      placeholder="Squawk! I'm a conversational agent! Ask me about the current weather in Honolulu!"
-      emoji="🦜"
+      placeholder="Ask about Crockett's Public House hours, happy hour, or menu highlights."
+      emoji="🍻"
       showIntermediateStepsToggle={true}
     />
   );

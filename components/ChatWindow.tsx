@@ -338,7 +338,10 @@ export function ChatWindow(props: {
           onChange={(e) => setInput(e.target.value)}
           onSubmit={sendMessage}
           loading={isLoading || intermediateStepsLoading}
-          placeholder={props.placeholder ?? "What's it like to be a pirate?"}
+          placeholder={
+            props.placeholder ??
+            "Ask about Crockett's Public House (Puyallup): hours, happy hour, or menu highlights."
+          }
         >
           {props.showIngestForm && (
             <Dialog>
